@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: tleumbetov-batyrzhan-devops
+    container_name: tleumbetov-batyrzhan-container
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Batyrzhan}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Tleumbetov}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2307}
+      STUDENT_ID: ${STUDENT_ID:-38201}
